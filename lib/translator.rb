@@ -9,7 +9,7 @@ end
 def get_japanese_emoticon(test)
   # code goes here
   puts "Please enter the emoticon that you'd like translate"
-  input = gets.chomp
+  input = YAML.load_file('emoticons.yml')
   input2 = gets.downcase.chomp
   test.each do |emotion, emoticons|
     if emoticons.first == input
@@ -21,7 +21,7 @@ end
 
 def get_english_meaning(test)
   puts "Please enter the emoticon that you'd like translate"
-  input = gets.chomp
+  input = YAML.load_file('emoticons.yml')
   input2 = gets.downcase.chomp
   test.each do |emoticons, emotion|
     if emotion.first == input
