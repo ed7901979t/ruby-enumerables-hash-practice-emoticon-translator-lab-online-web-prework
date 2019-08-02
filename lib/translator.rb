@@ -19,7 +19,7 @@ def get_japanese_emoticon
 end
 
 
-def get_english_meaning
+def get_english_meaning()
   puts "Please enter the emoticon that you'd like translate"
   input = gets.chomp
   input2 = gets.downcase.chomp
