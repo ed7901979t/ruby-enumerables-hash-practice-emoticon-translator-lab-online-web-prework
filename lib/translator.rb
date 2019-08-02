@@ -6,7 +6,7 @@ def load_library
   emoticons = YAML.load_file('emoticons.yml')
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(test)
   # code goes here
   puts "Please enter the emoticon that you'd like translate"
   input = gets.chomp
@@ -19,7 +19,7 @@ def get_japanese_emoticon
 end
 
 
-def get_english_meaning()
+def get_english_meaning(test)
   puts "Please enter the emoticon that you'd like translate"
   input = gets.chomp
   input2 = gets.downcase.chomp
