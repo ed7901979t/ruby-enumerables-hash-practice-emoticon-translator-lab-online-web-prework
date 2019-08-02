@@ -23,9 +23,9 @@ def get_english_meaning
   puts "Please enter the emoticon that you'd like translate"
   input = gets.chomp
   input2 = gets.downcase.chomp
-  test.each do |emoticons, emotic|
-    if emoticons.first == input
-      puts "Here is the Japanese version of your emoticon:   #{emoticons.last}"
+  test.each do |emoticons, emotion|
+    if emotion.first == input
+      puts "Here is the English version of your emoticon:   #{emotion.last}"
     end
   end
 end
