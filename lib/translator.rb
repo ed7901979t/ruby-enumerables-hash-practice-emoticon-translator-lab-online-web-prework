@@ -29,7 +29,7 @@ def get_english_meaning
     end
   end
 end
-end
+
 
 test = {
   :angel => ["O:)", ":("],
